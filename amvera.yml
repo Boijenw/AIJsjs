@@ -1,0 +1,16 @@
+version: 1.0
+
+service:
+  type: bot
+  name: senko-bot
+
+run:
+  command: python app.py
+
+resources:
+  cpu: 500m
+  memory: 256Mi
+
+persistence:
+  enabled: true
+  mountPath: /data
